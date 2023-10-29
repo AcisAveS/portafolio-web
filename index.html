@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi portafoao</title>
+    <title>Mi portafolio</title>
     <script
       src="https://kit.fontawesome.com/8ce9115bc8.js"
       crossorigin="anonymous"
@@ -21,6 +21,8 @@
       }
 
       .navegacion {
+        top: 0;
+        position: fixed;
         display: flex;
         height: 40px;
         flex-direction: row;
@@ -91,10 +93,63 @@
     <!-- Fin de la barra lateral de contactos  -->
 
     <!-- Inicia el contenido de la pagina -->
-    <section id="inicio" class=""></section>
-    <section id="sobre_mi" class=""></section>
-    <section id="conocimientos" class=""></section>
-    <section id="proyectos" class=""></section>
+    <section
+      id="inicio"
+      class=""
+      style="height: 500px; width: 100%; color: white; margin-top: 40px"
+    >
+      <h1 style="margin-top: 0">Desarrollador</h1>
+      <p>Creativo capaz de innovar y resolver.</p>
+    </section>
+    <section
+      id="sobre_mi"
+      class=""
+      style="height: 500px; width: 100%"
+    ></section>
+    <section
+      id="conocimientos"
+      class=""
+      style="
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      "
+    >
+      <article>
+        <h2>Lenguajes</h2>
+        <ul>
+          <li>Java</li>
+          <li>C#</li>
+          <li>PHP</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>HTML</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Frameworks</h2>
+        <ul>
+          <li>Laravel</li>
+          <li>Entity Framework</li>
+          <li>NextJS</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Herramientas</h2>
+        <ul>
+          <li>Docker</li>
+          <li>Git</li>
+          <li>HTTPie</li>
+          <li>DBeaver Community</li>
+        </ul>
+      </article>
+    </section>
+    <section
+      id="proyectos"
+      class=""
+      style="height: 500px; width: 100%"
+    ></section>
     <!-- Fin el contenido de la pagina -->
   </body>
 </html>
