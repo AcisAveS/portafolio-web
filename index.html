@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
-
-    <link rel="stylesheet" href="css/menu.css" />
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>Mi portafoao</title>
+    <script
+      src="https://kit.fontawesome.com/8ce9115bc8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
 
     <style>
       html,
       body {
-        width: 100%;
         margin: 0;
+        height: 100%;
+      }
+      body {
+        background-color: rgb(12, 12, 12);
+      }
+
+      .navegacion {
+        display: flex;
+        height: 40px;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .navegacion a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+
+      .contacto {
+        position: fixed;
+        height: 200px;
+        width: auto;
+        top: 60%;
+        right: 0;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .contacto a {
+        color: rgb(255, 255, 255);
+        padding-right: 10px;
+        font-size: 15px;
+        transition: transform 0.2s;
+        text-decoration: none;
+      }
+
+      .contacto a:hover {
+        transform: scale(1.5);
+      }
+
+      @media screen and (max-height: 460px) {
+        .contacto {
+          top: 30%;
+        }
       }
     </style>
   </head>
   <body>
-    <nav class="menu">
-      <ul>
-        <li>Inicio</li>
-        <li>Lenguajes de Programación</li>
-        <li>Frameworks</li>
-      </ul>
+    <!-- Barra de navegacion fija en la parte superior -->
+    <nav class="navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre_mi">Sobre mi</a>
+      <a href="#conocimientos">Conocimientos</a>
+      <a href="#proyectos">Proyectos</a>
     </nav>
+
+    <!-- Fin de la barra de navagcion -->
+
+    <!-- Inicia barra lateral de contactos  -->
+    <section class="contacto">
+      <a href="" target="_blank"><i class="fa-solid fa-at fa-2xl"></i> </a>
+      <a href="https://github.com/AcisAveS" target="_blank"
+        ><i class="fa-brands fa-square-github fa-2xl"></i>
+      </a>
+      <a href="" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2xl"> </i>
+      </a>
+    </section>
+    <!-- Fin de la barra lateral de contactos  -->
+
+    <!-- Inicia el contenido de la pagina -->
+    <section id="inicio" class=""></section>
+    <section id="sobre_mi" class=""></section>
+    <section id="conocimientos" class=""></section>
+    <section id="proyectos" class=""></section>
+    <!-- Fin el contenido de la pagina -->
   </body>
 </html>
